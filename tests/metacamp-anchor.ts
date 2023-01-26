@@ -29,8 +29,8 @@ console.log("keypair: ",keypair.publicKey.toBase58())
     // Add your test here.
     const tx = await program.methods
       .initialize(
-        "1",
-      "Account1"
+        "Account1",
+      "1"
       )
       .accounts({ onchainAccount: pda, initializer: keypair.publicKey })
       .signers([keypair])
